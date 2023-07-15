@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    
+  
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7061777328341371"
+        crossorigin="anonymous"></script> 
+        <!--สคริปต์ที่โหลดจาก Google AdSense เพื่อใช้ในการแสดงโฆษณาบนเว็บไซต์
+        crossorigin="anonymous" คือ คุณลักษณะ ที่ใช้กำหนดว่าเราต้องการให้รีเควสสำหรับแหล่งข้อมูลที่ระบุในแท็ก
+        <script> หรือ <link> นั้นเป็น Cross-origin request 
+        (หมายถึงการทำร้องขอข้อมูลหรือทราบข้อมูลจากแหล่งที่มีเกี่ยวข้องกันแต่อยู่ในเว็บไซต์หรือโดเมนที่แตกต่างกัน)โดยเฉพาะ 
+        กล่าวคือ เราต้องการแหล่งข้อมูลจากโดเมนอื่น (origin) ที่แตกต่างกับโดเมนปัจจุบันของเว็บไซต์เรา-->
+    
+    
+    <meta charset="UTF-8">
+   
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--ระบุว่าเว็บไซต์นี้เหมาะสมที่สุดกับ Internet Explorer เวอร์ชันล่าสุด-->
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--กำหนดขนาดของหน้าจอเพื่อให้เว็บไซต์ปรับแสดงผลอัตโนมัติให้เหมาะสมกับอุปกรณ์ที่ใช้งาน-->
+    
+    <title>Kasidech Glinpoglub Portfolio</title>
+
+    <link rel="stylesheet" href="style.css"> 
+    <!--เชื่อมโยงไฟล์ css ชื่อ style.css เข้ากับตัว web เพื่อใช้ style กับ website-->
+
+    
+    <script src="https://kit.fontawesome.com/31e88c46a6.js" crossorigin="anonymous"></script> 
+    <!--เรียกใช้ไลบรารี Font Awesome เพื่อให้สามารถใช้ไอคอนที่มีอยู่ในไบนารี่ได้-->
+
+  </head>
+<body>
+<div id="header">
+
+    <div class="container"> <!-- ที่ใช้สร้างตัวคลุมหรือคอนเทนเนอร์เพื่อกำหนดพื้นที่หรือขอบเขตในส่วนของเนื้อหาในเว็บไซต์-->
+      
+      <nav> <!-- ที่ใช้สร้างตัวคลุมหรือคอนเทนเนอร์เพื่อกำหนดพื้นที่หรือขอบเขตในส่วนของเนื้อหาในเว็บไซต์ ใช่คู่กับ <list>-->
+
+            <img src="images/Logo web.png" class="logo"> <!--ไปหารูปมาส่ซะนะ-->
+            
+            <ul id="sidemenu"> <!--เลื่อนแถบเมนู สำหรับเมนูนำทาง-->
+                <li><a href="#header"><h2>Home</h2></a></li>
+                <li><a href="#about"><h2>About</h2</a></li>
+                <li><a href="#award"><h2>Awards</h2</a></li>
+                <li><a href="#myproject"><h2>Project</h2></a></li>
+                <li><a href="#contact"><h2>Contact</h2></a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-sharp fa-solid fa-bars"onclick="openmenu()"></i> <!--ใช้สร้าง ivon รูป แฮมเบอร์เกอร์ บนขวาอ่ะ
+            โดยที่จะกำหนดเหตุการ์ คือ onclick แล้วเข้าไปตาม <li> ที่ระบุ-->
+        </nav>
+        <div class="headertext">
+            <p></p>
+            <h1>สวัสดีครับ ผมชื่อ นายกษิดิ์เดช กลิ่นโพธิ์กลับ <br> จาก โรงเรียนรัตนราษฎร์บำรุง<br>อยากเข้า<span> วิทยาการคอม มจพ.ครับ</span></h1>
+        </div>
+    </div>
+</div>
+<!--about-->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about1">
+                <img src="images/mypic2.png">
+            </div>
+            <div class="about2">
+                <h1 class="sub">ข้อมูลของผม</h1>
+                <p>
+                    ผมชื่อ กษิดิ์เดช กลิ่นโพธิ์กลับ จาก โรงเรียนรัตนราษฎร์บำรุง 
+                    <br> จุดแข็งของผมความทุ่มเทให้บสิ่งที่ชอบ เป็นคนที่ชอบหาประสบการณ์ ความรู้ และ เรียนรู้สิ่งใหม่ๆ
+                    <br>ความฝันของผมคือ การได้เป็น DevOps ในบริษัท ด้านเทคโนโลยีที่มีความก้าวหน้า 
+                    <br>ผมหวังว่าข้อมูลข้างต้นจะทำให้คุณรู้จักผมมากขึ้นนะครับ :)
+                </p>
+                <div class="tab-tittles">
+                    <p class="tablinks activelink" onclick="opentab('skills')">Skills</p>  
+                    <p class="tablinks" onclick="opentab('activities')">Activities</p>
+                    <p class="tablinks" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tabcontents activetab" id="skills">
+                    <ul>
+                        <li><span>Data Science</span><br> Python, R</li>
+                        <li><span>Database Management</span><br>SQL</li>
+                        <li><span>Machine Learning</span><br>Numpy, Sci-kit Learn</li>
+                        <li><span>Web Development</span><br> Front - End Design</li>
+                    </ul>
+                </div>
+                <div class="tabcontents" id="activities">
+                    <ul>
+                        <li><span>YTP 2023 by WEDO</span>
+                            <br>Basecamp, Hell Day and 3rd place in hackathon </li>
+                        <li><span>Riverhack by Hackathon Thailand</span>
+                            <br>2nd place award </li>
+                        <li><span>RHB Get your hack on ASEAN EDITION 2023</span>
+                            <br>Participate </li>
+                    </ul>
+                </div>
+                <div class="tabcontents" id="education">
+                    <ul>
+                        <li><span>Primary School</span><br>Anurajaprasit School(English Program) </li>
+                        <li><span>Junior High School</span><br>Nonthaburi Wittayalai School(Eng-Jap Promgram)</li>
+                        <li><span>Senior High School</span><br>Watkhemapirataram School</li>
+                        <li><span>BCs of Data Science</span><br>Silpakorn University</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!---------------------awardv2.1----------------->
+<div id="award">
+    <div class="awardcontainer">
+        <h1 class="sub">Awards</h1>
+        <div class="row1">
+            <div class="myaward">
+                <img src="images/award-1.png">
+            </div>
+            <div class="myaward1">
+                <h5 class="suba">1St Runner Up of River Hack by Environhack</h5>
+                <p class="l">
+                    In the hackathon called River Hack my team(team เด็กโขง) were the 2nd place.
+                    We built the project Warn. It is the warning system and machine learning project that will helps
+                    local people in Mekong River area get the real time warning and a prediction
+                    of water levels changing in the Line Chat Bot, SMS and P.A. announcement the community.
+                    I was an engineer in the team.
+                </p>
+                <a
+                    href="https://www.canva.com/design/DAFUWYMTsxI/xJEn00ZA5_o3JKkgdEYjUw/view?utm_content=DAFUWYMTsxI&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"class="button">Learn More</a>
+            </div>
+        </div>
+        <div class="row2">
+            <div class="myaward2">
+                <img src="images/award-2.png">
+            </div>
+            <div class="myaward21">
+                <h6 class="suba1">The Grand Silky Rose <br>(2nd Runner Up) of WEDO<br> YTP 2023 Hell Day's hackathon</h6>
+                <p class="u">
+                    In YTP 2023 by WEDO Hell Day's, my team(team 1) were the 3rd place and 
+                    I got my self a personal award called caffeine fighter. Our team built a project called EVER-X,
+                    it's a smart down suit with AR goggles that's going to help you get to the Mount Everest Death Zone easier
+                    and have more potential to survive in the hard time.
+                </p>
+                <a href="https://www.facebook.com/wedotheofficial/posts/pfbid0ZD5zJ1yaKossrk7qwyG7ejvWefTjAnatuc5ASyhVpW7BEDRhentoSGPPzHPkWExBl"
+                    class="button1">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!---------------------my project----------------->
+
+<div id="myproject">
+    <div class="container">
+        <h1 class="sub">My Projects</h1>
+        <div class="myprojects">
+            <div class="project">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h4>Data Visualize Of <br>My Favourite Music</h4>
+                    <p>Data Visualize from the data that I collected in
+                        my own Spotify playlist.Find who's my favourite artist.
+                        What kind of music that I like and other statistics.
+                    </p>
+                    <a href="https://github.com/OwenKujo/PythonD1"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h4>Machine Learning To Predict <br>The Football Match</h4>
+                    <p>I collected the data by web scraping a football statistics website
+                        and use them in machine learning to predict the football match.
+                    </p>
+                    <a href="https://github.com/OwenKujo/footballmatchpredict"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h2>Warn</h2>
+                    <h5>Warming system and AI to help Mekong River</h5>
+                    <p>Warn was built by my team (team เด็กโขง) in the River Hack. It will helps
+                    local people in Mekong River area get the real time warning and a prediction
+                    of water levels changing in the Line Chat Bot, SMS and P.A. announcement the community.
+                    </p>
+                    <a href="https://www.canva.com/design/DAFUWYMTsxI/xJEn00ZA5_o3JKkgdEYjUw/view?utm_content=DAFUWYMTsxI&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="myproject">
+    <div class="container">
+        <div class="myprojects2">
+            <div class="project">
+                <img src="images/work-4.png">
+                <div class="layer">
+                    <h4>Calculator Website build uses VUE3</h4>
+                    <p>This is cooperation project with my two friends that I know them
+                        in CS Camp 14. We built calculator website using VUE3 and Vuetify.
+                    </p>
+                    <a
+                        href="https://github.com/OwenKujo/owpfcalculator"><i
+                            class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/work-5.png">
+                <div class="layer">
+                    <h4>Machine learning to predict stock market</h4>
+                    <p>I use yfinance package to collect the data of daily price history in the stock market as an index file.
+                        I use RandomForestClassification as the main tool.
+                    </p>
+                    <a href="https://github.com/OwenKujo/stock-predict-model"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/work-6.png">
+                <div class="layer">
+                    <h3>COMING SOON </h3>
+                    <p>
+                    </p>
+                    <a href="https://github.com/OwenKujo"><i
+                            class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+           
+
+        </div>
+        <a href="https://github.com/OwenKujo" class="btn">Discover more</a>
+    </div>
+</div>
+<!-----------------------contact section----------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contactleft">
+                <h1 class="sub">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>owenrapeepat@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>080-938-1062</p>
+                <div class="socialmedia">
+                    <a href="https://www.facebook.com/profile.php?id=100002343503711"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="https://www.instagram.com/owenkujo/"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://www.youtube.com/channel/UCCUwIPX8MnLPpcOumvB-Hjg"><i class="fa-brands fa-square-youtube"></i></a>
+                </div>
+                <a href="" download class="btn btn2" >Download CV</a>
+            </div>
+            <div class="contactright">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="email" name="email" placeholder="E-mail" required>
+                    <textarea name="Massage" rows="6" placeholder="Massage"></textarea>
+                    <button type="submit" class="btn btn2">SUBMIT</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © 2022 Rapeepat Promlat All Rights Reserved.  </p>
+    </div>
+</div>
+
+
+
+<!--make the button of skills act edu-->
+<script>
+
+    var tablinksa = document.getElementsByClassName("tablinks");
+    var tabcontentsa = document.getElementsByClassName("tabcontents");
+    
+    function opentab(tabname){
+        for(tablink of tablinksa){
+            tablink.classList.remove("activelink");
+        }
+        for(tabcontent of tabcontentsa){
+            tabcontent.classList.remove("activetab");
+        }
+        event.currentTarget.classList.add("activelink")
+        document.getElementById(tabname).classList.add("activetab")
+    }
+
+</script>
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px"
+    }
+</script>
+
+<form name="submit-to-google-sheet"></form>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzfjj19vIorApAzKrNdJubXKfi5Yldm8kgq8-nC-gbIUHH6FRRzX0oeYm5wyqmDk3Il/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(response => {
+                msg.innerHTML = "Message Sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+    })
+</script>
+</body>
+</html>

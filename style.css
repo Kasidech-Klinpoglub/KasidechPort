@@ -1,0 +1,576 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppons", sans-serif;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: #080808;
+  color: #fff;
+}
+/*down here is background*/
+#header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(images/lastbg.png);
+  background-size: cover;
+  background-position: center;
+}
+.container {
+  padding: 10px 10%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.logo {
+  width: 150px;
+}
+/*down here is the bar*/
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 20px 20px;
+  margin-top: 25px;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
+nav ul li a:hover {
+  color: rgb(74, 173, 235);
+  transition: 0.5s;
+}
+nav ul li a:hover::after {
+  width: 100%;
+}
+.headertext {
+  margin-top: 10%;
+  font-size: 30px;
+}
+.headertext h1 {
+  font-size: 60px;
+  margin-top: 10 px;
+}
+.headertext h1 span {
+  color: rgb(129, 193, 233);
+}
+/*--------------------about---------------*/
+#about {
+  padding: 80px 0;
+  color: rgb(255, 255, 255);
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.about1 {
+  width: 35%;
+}
+
+.about1 img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.about2 {
+  flex-basis: 60%;
+}
+
+.sub {
+  font-size: 60px;
+  font-weight: 600;
+  color: #fff;
+  padding-bottom: 20px;
+}
+
+.tab-tittles {
+  display: flex;
+  margin: 20px 0 40px;
+}
+
+.tab-tittles p {
+  font-weight: 1000;
+}
+
+.tablinks {
+  margin-right: 20px;
+  font-size: 20px;
+  display: block;
+  width: fit-content;
+  background: rgb(74, 173, 235);
+  padding: 14px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  transition: background 0.7s;
+  cursor: pointer;
+}
+
+.tablinks:hover {
+  background: rgb(255, 255, 255);
+  color: rgb(74, 173, 235);
+}
+.tablinks.activelink {
+  background: rgb(255, 255, 255);
+  color: rgb(74, 173, 235);
+}
+
+.tablinks.activelink::after {
+  background: rgb(14, 9, 9);
+  color: white;
+}
+
+.tabcontents ul li {
+  list-style: none;
+  margin: 12px 0;
+}
+
+.tabcontents ul li span {
+  color: rgb(115, 188, 234);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.tabcontents {
+  display: none;
+}
+
+.tabcontents.activetab {
+  display: block;
+}
+/*--------------------awardv2---------------*/
+#award {
+  padding: 80px 0;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+}
+.row1 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.awardcontainer {
+  padding: 10px 10%;
+}
+
+.myaward {
+  width: 35%;
+  padding: 50px 0;
+}
+.myaward img {
+  width: 110%;
+  border-radius: 15px;
+}
+.myaward1 {
+  flex-basis: 60%;
+  margin-top: 50px;
+  padding-left: 30px;
+}
+.suba {
+  font-size: 40px;
+  font-weight: 550;
+  color: rgb(115, 188, 234);
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+}
+.button {
+  display: block;
+  margin: 40px 10px;
+  width: fit-content;
+  background: rgb(255, 255, 255);
+  padding: 14px 30px;
+  border-radius: 2px;
+  text-decoration: none;
+  font-weight: 600;
+  color: rgb(74, 173, 235);
+  transition: background 0.7s;
+}
+.button:hover {
+  background: rgb(74, 173, 235);
+  color: white;
+}
+#award2 {
+  padding: 80px 0;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+}
+
+.row2 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.awardcontainer {
+  padding: 10px 10%;
+}
+
+.myaward2 {
+  width: 35%;
+  padding: 50px 0;
+}
+
+.myaward2 img {
+  width: 110%;
+  border-radius: 15px;
+  margin-left: 740px;
+}
+
+.myaward21 {
+  flex-basis: 60%;
+  margin-top: -510px;
+  padding-right: 30px;
+  margin-right: 100px;
+}
+
+.suba1 {
+  font-size: 40px;
+  font-weight: 550;
+  color: rgb(115, 188, 234);
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+}
+
+.button {
+  display: block;
+  margin: 40px 10px;
+  width: fit-content;
+  background: rgb(255, 255, 255);
+  padding: 14px 30px;
+  border-radius: 2px;
+  text-decoration: none;
+  font-weight: 600;
+  color: rgb(74, 173, 235);
+  transition: background 0.7s;
+}
+
+.button:hover {
+  background: rgb(74, 173, 235);
+  color: white;
+}
+.button1 {
+  display: block;
+  margin: 40px 10px;
+  width: fit-content;
+  background: rgb(255, 255, 255);
+  padding: 14px 30px;
+  border-radius: 2px;
+  text-decoration: none;
+  font-weight: 600;
+  color: rgb(74, 173, 235);
+  transition: background 0.7s;
+}
+
+.button1:hover {
+  background: rgb(74, 173, 235);
+  color: white;
+}
+
+/*---------------my project----------*/
+#services {
+  padding: 20px 0;
+}
+.serviceslist {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+#myproject {
+  padding: 50px 0;
+}
+.myprojects,
+.myprojects2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 40px;
+}
+.myprojects2 {
+  margin-top: -80px;
+}
+.project {
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.project img {
+  width: 100%;
+  border-radius: 15px;
+  display: block;
+  transition: transfrom 0.7s;
+}
+.layer {
+  width: 100%;
+  height: 0%;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgb(44, 104, 142));
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  font-size: 15px;
+  transition: height 0.7s;
+}
+.layer h3 {
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.layer a {
+  margin-top: 20px;
+  color: rgb(74, 173, 235);
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 60px;
+  background: rgb(255, 255, 255);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+}
+.project:hover img {
+  transform: scale(1.1);
+}
+.project:hover .layer {
+  height: 100%;
+}
+.btn {
+  display: block;
+  margin: 50px auto;
+  width: fit-content;
+  border: 2px solid rgb(74, 173, 235);
+  padding: 14px 50px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #fff;
+  transition: background 0.7s;
+}
+.btn:hover {
+  background: rgb(74, 173, 235);
+}
+/*--------------------cotact section------------*/
+.contactleft {
+  flex-basis: 35%;
+}
+.contactright {
+  flex-basis: 60%;
+}
+.contactleft p {
+  margin-top: 30px;
+}
+.contactleft p i {
+  margin-right: 15px;
+  font-size: 30px;
+}
+.socialmedia {
+  margin-top: 30px;
+}
+.socialmedia a {
+  text-decoration: none;
+  font-size: 50px;
+  margin-right: 15px;
+  color: ghostwhite;
+  display: inline-block;
+  transition: tramsform 0.5s;
+}
+.socialmedia a:hover {
+  color: rgb(74, 173, 235);
+  transform: translateY(-5px);
+}
+.btn.btn2 {
+  display: inline-block;
+  background: rgb(74, 173, 235);
+}
+.contactright form {
+  width: 100%;
+}
+for,
+input,
+form textarea {
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: darkgray;
+  padding: 15px;
+  margin: 15px;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 5px;
+}
+form .btn2 {
+  padding: 14px 60px;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.copyright {
+  width: 100%;
+  text-align: center;
+  padding: 25px 0;
+  font-weight: 300;
+  background: #262626;
+  margin-top: 20px;
+}
+/*----------------------respsnsive part baby-----------------*/
+nav .fa-solid {
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+  #header {
+    background-image: url(images/phonebackground.png);
+  }
+  .headertext {
+    margin-top: 30%;
+    font-size: 18px;
+  }
+  .headertext h1 {
+    font-size: 22.5px;
+  }
+  nav .fa-sharp {
+    display: block;
+    font-size: 25px;
+  }
+  nav .fa-solid {
+    display: block;
+    font-size: 25px;
+  }
+  nav ul {
+    background: rgb(44, 104, 142);
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 200vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 25px;
+  }
+  nav ul .fa-solid {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+    font-size: 30px;
+  }
+  nav ul .fa-sharp {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+    font-size: 30px;
+  }
+  .row,
+  .row1,
+  .row2 {
+    margin-left: -20px;
+  }
+  .sub {
+    font-size: 40px;
+  }
+  .about1,
+  .about2 {
+    flex-basis: 100%;
+  }
+  .about1 {
+    margin-bottom: 10px;
+  }
+  .about2 {
+    font-size: 14px;
+  }
+  .suba {
+    font-size: 30px;
+  }
+  .suba1 {
+    font-size: 20px;
+    padding-top: 200px;
+    margin-right: -110px;
+    padding-left: 30px;
+  }
+  .l {
+    font-size: 15.2px;
+    margin-top: -20px;
+    margin-right: 10px;
+  }
+  .u {
+    font-size: 15.2px;
+    margin-right: -102.5px;
+    margin-top: -20px;
+    padding-left: 30px;
+  }
+
+  .myaward,
+  .myaward1 {
+    flex-basis: 100%;
+  }
+  .myaward2,
+  .myaward21 {
+    flex-basis: 100%;
+  }
+
+  .myaward2,
+  .myaward {
+    margin-bottom: -80px;
+  }
+
+  .myaward21,
+  .myaward1 {
+    font-size: 14px;
+  }
+  .myaward img {
+    position: relative;
+    width: 100%;
+  }
+  .myaward2 img {
+    width: 100%;
+    margin-bottom: 350px;
+    margin-left: 00px;
+    padding-bottom: 0px;
+  }
+  .button1 {
+    padding-left: -50px;
+    margin-right: -60px;
+    margin-left: 40px;
+    margin-right: -80px;
+  }
+  .tablinks {
+    font-size: 14px;
+    margin-right: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .contactleft,
+  .contactright {
+    flex-basis: 100%;
+  }
+  .copyright {
+    font-size: 13px;
+  }
+}
+#msg {
+  color: rgb(74, 173, 235);
+  margin-top: -40px;
+  display: block;
+}
